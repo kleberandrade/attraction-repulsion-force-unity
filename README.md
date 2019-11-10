@@ -10,17 +10,25 @@ Example of an attraction and repulsion magnetism for games
 
 First, we calculate the object direction to magnetic center. Where *D* is the vector direction, *P* is the object and *C* is the maginetic center.
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=D%20%3D%20C%20-%20P&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="D = C - P" width="83" height="17" />
+<p align="center">
+  <img src="Images/eq1.png">
+</p>
 
-First, we calculate the force proportional to distance from object to magnetic center. Where *F* is the proportional force, *F_{max}* is the maximum force and *D* is the distance from the object to the magnetic center.
+First, we calculate the force proportional to distance from object to magnetic center. Where *F* is the proportional force, *F<inf>max</inf>* is the maximum force and *D* is the distance from the object to the magnetic center.
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=F%20%3D%20%5Cfrac%7BF_%7Bmax%7D%7D%7B%7CD%7C%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="F = \frac{F_{max}}{|D|}" width="76" height="46" />
+<p align="center">
+  <img src="Images/eq2.png">
+</p>
 
 Finally, we calculate the vector force according to the attraction or repulsion function. Where *f* is the vector force applied to the object, *\sigma* is the type of magnetism (none, repulsion or attraction) and *m* is the mass of the object.
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=%5Csigma%20%3D%20%5Cbegin%7Bcases%7D-1%20%26%20%5Ctext%7B%20if%20%7D%20repulsion%20%5C%5C%200%20%26%20%5Ctext%7B%20if%20%7D%20none%20%5C%5C%201%20%26%20%5Ctext%7B%20if%20%7D%20attraction%20%5Cend%7Bcases%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\sigma = \begin{cases}-1 & \text{ if } repulsion \\ 0 & \text{ if } none \\ 1 & \text{ if } attraction \end{cases}" width="203" height="81" />
+<p align="center">
+  <img src="Images/eq3.png">
+</p>
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=f%20%3D%20D%20%5Cfrac%7BF%7D%7Bm%7D%5Csigma&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="f = D \frac{F}{m}\sigma" width="79" height="43" />
+<p align="center">
+  <img src="Images/eq4.png">
+</p>
 
 ## Code
 
