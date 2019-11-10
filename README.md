@@ -1,6 +1,6 @@
-# Simple Attraction and Repulsion Force for Games in Unity
+# Attraction and Repulsion Force for Games in Unity
 
-Example of an attraction and repulsion force for games
+Example of an simple attraction and repulsion force for games
 
 <p align="center">
   <img width="600" src="Images/magnetism.gif">
