@@ -21,12 +21,6 @@ public class RandomSpawner : MonoBehaviour
             // Configuração escala e peso
             go.transform.localScale = Vector3.one * Random.Range(m_MinScale, m_MaxScale);
             go.GetComponent<Rigidbody>().mass = go.transform.localScale.magnitude;
-            // Configuração da cor
-            Color color = Color.white;
-            color.r = Random.Range(0.0f, 1.0f);
-            color.g = Random.Range(0.0f, 1.0f);
-            color.b = Random.Range(0.0f, 1.0f);
-            go.GetComponent<Renderer>().material.SetColor("_Color", color);
         }
     }
 

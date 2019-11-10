@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Magnetism : MonoBehaviour
 {
@@ -15,15 +13,26 @@ public class Magnetism : MonoBehaviour
     private void FixedUpdate()
     {
         Collider[] colliders = Physics.OverlapSphere(m_Pivot.position, m_Radius, m_Layers);
+
         float signal = (float)m_Type;
+
         foreach (var collider in colliders)
         {
             Rigidbody body = collider.GetComponent<Rigidbody>();
+            if (body == null) 
+                continue;
+
             Vector3 direction = m_Pivot.position - body.position;
+
             float distance = direction.magnitude;
+
             direction = direction.normalized;
-            if (distance < m_StopRadius) continue;
+
+            if (distance < m_StopRadius) 
+                continue;
+
             float forceRate = (m_Force / distance);
+
             body.AddForce(direction * (forceRate / body.mass) * signal);
         }
     }

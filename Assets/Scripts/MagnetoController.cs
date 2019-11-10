@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MagnetoController : MonoBehaviour
 {
     private Magnetism m_Controller;
     public float m_Step = 1.0f;
+    public Text m_Text;
 
     private void Awake()
     {
@@ -34,5 +36,8 @@ public class MagnetoController : MonoBehaviour
             m_Controller.m_Radius -= m_Step * Time.deltaTime;
             m_Controller.transform.localScale = Vector3.one * m_Controller.m_Radius * 2.0f;
         }
+
+
+        m_Text.text = m_Controller.m_Type.ToString();
     }
 }
