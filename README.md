@@ -35,10 +35,10 @@ Finally, we calculate the vector force according to the attraction or repulsion 
 Basic code created from equations
 
 ```csharp
-public class Magnetism : MonoBehaviour
+public class Force : MonoBehaviour
 {
-    public enum MagnetismType { Repulsion = -1, None = 0, Attraction = 1 }
-    public MagnetismType m_Type;
+    public enum ForceType { Repulsion = -1, None = 0, Attraction = 1 }
+    public ForceType m_Type;
     public Transform m_Pivot;
     public float m_Radius;
     public float m_StopRadius;
@@ -54,7 +54,8 @@ public class Magnetism : MonoBehaviour
         foreach (var collider in colliders)
         {
             Rigidbody body = collider.GetComponent<Rigidbody>();
-            if (body == null) continue;
+            if (body == null) 
+                continue;
 
             Vector3 direction = m_Pivot.position - body.position;
 
@@ -62,7 +63,8 @@ public class Magnetism : MonoBehaviour
 
             direction = direction.normalized;
 
-            if (distance < m_StopRadius) continue;
+            if (distance < m_StopRadius) 
+                continue;
 
             float forceRate = (m_Force / distance);
 
