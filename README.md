@@ -1,6 +1,6 @@
-# Simple Magnetism for Games in Unity
+# Simple Attraction and Repulsion Force for Games in Unity
 
-Example of an attraction and repulsion magnetism for games
+Example of an attraction and repulsion force for games
 
 <p align="center">
   <img width="600" src="Images/magnetism.gif">
@@ -8,19 +8,19 @@ Example of an attraction and repulsion magnetism for games
 
 ## Methods
 
-First, we calculate the object direction to magnetic center. Where *D* is the vector direction, *P* is the object and *C* is the maginetic center.
+First, we calculate the object direction to center. Where *D* is the vector direction, *P* is the object and *C* is the center.
 
 <p align="center">
   <img src="Images/eq1.png">
 </p>
 
-First, we calculate the force proportional to distance from object to magnetic center. Where *F* is the proportional force, *F<sub>max</sub>* is the maximum force and *D* is the distance from the object to the magnetic center.
+Then, we calculate the force proportional to distance from object to center. Where *F* is the proportional force, *F<sub>max</sub>* is the maximum force and *D* is the distance from the object to the center.
 
 <p align="center">
   <img src="Images/eq2.png">
 </p>
 
-Finally, we calculate the vector force according to the attraction or repulsion function. Where *f* is the vector force applied to the object, *\sigma* is the type of magnetism (none, repulsion or attraction) and *m* is the mass of the object.
+Finally, we calculate the vector force according to the attraction or repulsion function. Where *f* is the vector force applied to the object, *\sigma* is the type of (none, repulsion or attraction) and *m* is the mass of the object.
 
 <p align="center">
   <img src="Images/eq3.png">
