@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 245419831}
   - component: {fileID: 245419835}
   m_Layer: 0
-  m_Name: Magneto
+  m_Name: Force
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,29 +1,27 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class MagnetoController : MonoBehaviour
+public class ForceController : MonoBehaviour
 {
-    private Magnetism m_Controller;
+    private Force m_Controller;
     public float m_Step = 1.0f;
     public Text m_Text;
 
     private void Awake()
     {
-        m_Controller = GetComponent<Magnetism>();
+        m_Controller = GetComponent<Force>();
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.R))
-            m_Controller.m_Type = Magnetism.MagnetismType.Repulsion;
+            m_Controller.m_Type = Force.ForceType.Repulsion;
 
         if (Input.GetKeyDown(KeyCode.A))
-            m_Controller.m_Type = Magnetism.MagnetismType.Attraction;
+            m_Controller.m_Type = Force.ForceType.Attraction;
 
         if (Input.GetKeyDown(KeyCode.N))
-            m_Controller.m_Type = Magnetism.MagnetismType.None;
+            m_Controller.m_Type = Force.ForceType.None;
 
         if (Input.GetKey(KeyCode.UpArrow))
         {

@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 
-public class Magnetism : MonoBehaviour
+public class Force : MonoBehaviour
 {
-    public enum MagnetismType { Repulsion = -1, None = 0, Attraction = 1 }
-    public MagnetismType m_Type;
+    public enum ForceType { Repulsion = -1, None = 0, Attraction = 1 }
+    public ForceType m_Type;
     public Transform m_Pivot;
     public float m_Radius;
     public float m_StopRadius;
