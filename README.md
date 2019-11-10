@@ -3,7 +3,7 @@
 Example of an attraction and repulsion magnetism for games
 
 <p align="center">
-  <img width="600" src="Images/Magnetism.gif">
+  <img width="600" src="Images/magnetism.gif">
 </p>
 
 ## Methods
