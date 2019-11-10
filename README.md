@@ -20,7 +20,7 @@ Then, we calculate the force proportional to distance from object to center. Whe
   <img src="Images/eq2.png">
 </p>
 
-Finally, we calculate the vector force according to the attraction or repulsion function. Where *f* is the vector force applied to the object, *\sigma* is the type of (none, repulsion or attraction) and *m* is the mass of the object.
+Finally, we calculate the vector force according to the attraction or repulsion function. Where *f* is the vector force applied to the object, *σ* is the type of (none, repulsion or attraction) and *m* is the mass of the object.
 
 <p align="center">
   <img src="Images/eq3.png">
