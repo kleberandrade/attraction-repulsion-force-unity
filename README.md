@@ -14,7 +14,7 @@ First, we calculate the object direction to magnetic center. Where *D* is the ve
   <img src="Images/eq1.png">
 </p>
 
-First, we calculate the force proportional to distance from object to magnetic center. Where *F* is the proportional force, *F<inf>max</inf>* is the maximum force and *D* is the distance from the object to the magnetic center.
+First, we calculate the force proportional to distance from object to magnetic center. Where *F* is the proportional force, *F<sub>max</sub>* is the maximum force and *D* is the distance from the object to the magnetic center.
 
 <p align="center">
   <img src="Images/eq2.png">
